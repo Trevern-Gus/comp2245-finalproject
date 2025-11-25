@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.register-container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+/* Heading */
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Form Labels */
+.register-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Form Inputs */
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+.register-container input[type="email"]:focus,
+.register-container input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Links */
+.register-container p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.register-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+/* Success / Error messages */
+.message {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
