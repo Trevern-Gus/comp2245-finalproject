@@ -1,3 +1,7 @@
+DROP DATABASE IF EXISTS dolphin_crm;
+CREATE DATABASE dolphin_crm;
+USE dolphin_crm;
+
 -- Create USERS table
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
