@@ -52,3 +52,6 @@ VALUES (
     '$2y$10$9kWfRTY6aIpiI5yAx7AnZ.7rwhhtjfiPgk41IrT9jpJ1rssZCvSO6',
     'admin'
 );
+
+-- Grant all privileges to the admin user
+GRANT ALL PRIVILEGES ON dolphin_crm.* TO 'AdminUser'@'localhost' IDENTIFIED BY 'password123';
