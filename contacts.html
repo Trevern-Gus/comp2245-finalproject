@@ -23,56 +23,75 @@
             <h2>New Contact</h2>
            
             <form id="registerForm" action="add_user.php" method="POST">
-            <div>
+            <div id = 'formGrid'>
 
-                <label for ='title'>Title</label>
-                <select id="title" name='title' required>
-                    <option value="" disabled selected>Select your title</option>
-                    <option value="Mr.">Mr.</option>
-                    <option value="Ms.">Ms.</option>
-                    <option value="Mrs.">Mrs.</option>
-                </select>
+                <div>
+                    <label for ='title'>Title</label>
+                    <select id="title" name='title' required>
+                        <option value="" disabled selected>Select your title</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mrs.">Mrs.</option>
+                    </select>
                 <br>
+                </div>
 
-                <label for="email">Email Address</label>
-                <br>
-                <input type="email" id="email" name="email" placeholder="you@example.com" required>
-                <br>
+                <div>
+                    <label for="firstname">First Name</label>
+                    <br>
+                    <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
+                    <br>
+                </div>
+                
+                <div>
+                    <label for="lastname">Last Name</label>
+                    <br>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+                    <br>
+                </div>
 
-                <label for="password">Password</label>
-                <br>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                <br>
+                <div>
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    <br>
+                </div>
+                
+                <div>
+                    <label for="telephone">Telephone</label>
+                    <br>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Enter your telephone number" required>
+                    <br>
+                </div>
 
-                <label for="password">Password</label>
-                <br>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                <br>
+                <div>
+                    <label for="comp">Company</label>
+                    <br>
+                    <input type="text" id="comp" name="comp" placeholder="Enter your company name" required>
+                    <br>
+                </div>
+                
+                <div>
+                    <label for="type">Type</label>
+                    <br>
+                    <select id="type" name='type' required>
+                        <option value="" disabled selected>Select contact type</option>
+                        <option value="Sales Lead">Sales Lead</option>
+                        <option value="Support">Support</option>
+                    </select>
+                    <br>
+                </div>
 
-                <label for="password">Password</label>
-                <br>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                <br>
-
-                <label for="password">Password</label>
-                <br>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                <br>
-
-                <label for="password">Password</label>
-                <br>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                <br>
-
-                <label for="password">Password</label>
-                <br>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                <br>
+                <div>
+                    <label for="assign">Assigned To</label>
+                    <br>
+                    <input type="text" id="assign" name="assign" placeholder="Enter the assigned person" required>
+                    <br>
+                </div>
             </div>
 
-            <button type="submit">Save</button>
+            <button id='SaveBtn' type="submit">Save</button>
         </form>
-            <a href="register.html"><button id="AddUserBtn">+ Add User</button></a> 
         </div>
         
     </main>
